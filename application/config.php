@@ -240,4 +240,8 @@ return [
         'var_page'  => 'page',
         'list_rows' => 15,
     ],
+	
+	'__JS__' => ['/public/static/index/js'],
+	'__CSS__' => ['/public/static/index/css'],
+	'__IMG__' => ['public/static/index/img'],
 ];

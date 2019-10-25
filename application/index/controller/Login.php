@@ -1,5 +1,5 @@
 <?php
-namespace app\index\controller;
+// namespace app\index\controller;
 
 use think\Controller;
 
@@ -16,11 +16,14 @@ class Login extends Controller
     public function doLogin()
     {
     	$param = input('post.');
-		if(empty($param['username'])) {
-			$this->error('用户名不能为空！');
+		$where = new Where();
+		$where['username'] = ('=',$param['user_name']);
+		$where['passwd'] = ('=', $param['passwd']);
+		$has = db('userInfo')->where($where)->find();
+		if(empty($has))
+		{
+			$this->error('用户名或密码错误！');
 		}
-		if(empty($param['passwd'])) {
-			$this->error('用户名不能为空！');
-		}
+		$this->
     }
 }
