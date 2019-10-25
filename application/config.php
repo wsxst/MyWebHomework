@@ -241,7 +241,7 @@ return [
         'list_rows' => 15,
     ],
 	
-	'__JS__' => ['__STATIC__/index/js'],
-	'__CSS__' => ['__STATIC__/index/css'],
-	'__IMG__' => ['__STATIC__/index/img'],
+	// '__JS__' => ['__STATIC__/index/js'],
+	// '__CSS__' => ['__STATIC__/index/css'],
+	// '__IMG__' => ['__STATIC__/index/img'],
 ];
