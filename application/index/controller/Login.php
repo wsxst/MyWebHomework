@@ -17,8 +17,8 @@ class Login extends Controller
     {
     	$param = input('post.');
 		$where = new Where();
-		$where['username'] = ('=',$param['user_name']);
-		$where['passwd'] = ('=', $param['passwd']);
+		$where['username'] = ['=',$param['user_name']];
+		$where['passwd'] = ['=',$param['passwd']];
 		$has = db('userInfo')->where($where)->find();
 		if(empty($has))
 		{
