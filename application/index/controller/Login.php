@@ -24,6 +24,6 @@ class Login extends Controller
 		{
 			$this->error('用户名或密码错误！');
 		}
-		$this->
+		this->redirect('/index/index/index');
     }
 }
