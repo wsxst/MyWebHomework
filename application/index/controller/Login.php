@@ -15,6 +15,12 @@ class Login extends Controller
     }
     public function doLogin()
     {
-    	
+    	$param = input('post.');
+		if(empty($param['username'])) {
+			$this->error('用户名不能为空！');
+		}
+		if(empty($param['passwd'])) {
+			$this->error('用户名不能为空！');
+		}
     }
 }
